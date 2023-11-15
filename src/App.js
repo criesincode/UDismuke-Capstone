@@ -1,20 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage"
+import LandingPage from "./components/LandingPage/LandingPage";
 import "./App.scss"
 
 
-function App() {
 
+function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </Router>
-      
-    </div>
-  );
+    <LandingPage />
+  )
 }
 
 export default App;

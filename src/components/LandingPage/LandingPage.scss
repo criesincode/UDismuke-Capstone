@@ -1,0 +1,28 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+
+body {
+    background-color: $capstone-6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    color:  $capstone-3;
+    font-weight: 900;
+}
+.center__text {
+    color: $capstone-1;
+}
+button {
+    align-self: center;
+    background-color: $capstone-5;
+    border: none;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
