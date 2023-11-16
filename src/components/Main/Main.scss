@@ -1,20 +1,8 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/font" as *;
 
-body {
-    background-color: $capstone-background;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.land-header__text {
-    color: $capstone-3;
-    font-weight: 900;
-    font-size: 4.375rem;
-    margin-bottom: 1.875rem;
-}
+
 .land-text {
     color: $capstone-1;
     font-weight: 500;

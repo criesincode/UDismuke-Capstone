@@ -1,0 +1,11 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+
+
+.land-header__text {
+    color: $capstone-3;
+    font-weight: 900;
+    font-size: 4.375rem;
+    margin-top: 200px;
+    margin-bottom: 1.875rem;
+}    

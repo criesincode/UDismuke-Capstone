@@ -1,5 +1,12 @@
 @use "../src/styles/partials/font" as *;
+@use "../src/styles/partials/variables" as *;
+@use "../src/styles/partials/mixins" as *;
 
 body {
   font-family: "Barlow";
+  background-color: $capstone-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
