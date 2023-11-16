@@ -2,26 +2,46 @@
 @use "../../styles/partials/font" as *;
 
 body {
-    background-color: $capstone-6;
+    background-color: $capstone-background;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-p {
-    color:  $capstone-3;
+.land-header__text {
+    color: $capstone-3;
     font-weight: 900;
+    font-size: 4.375rem;
+    margin-bottom: 1.875rem;
 }
-.center__text {
+.land-text {
     color: $capstone-1;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-left: .625rem;
+}
+.land-text__container {
+    width: 31.25rem;
+    background-color: $capstone-5;
+    border-radius: 10px;
+    margin-bottom: 5rem;
 }
 button {
     align-self: center;
-    background-color: $capstone-5;
+    background-color: $capstone-4;
     border: none;
+    width: 6.25rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    font-family: "Barlow";
+    font-weight: 500;
+    font-size: 15px;
 }
-section {
+button:hover {
+    background-color: $capstone-6;
+}
+main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

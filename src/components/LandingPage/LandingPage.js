@@ -3,15 +3,15 @@ import { Link } from "react-router-dom"
 
 const LandingPage = () => {
     return (
-        <body>
+        <body className="land">
             <header>
-                <p>U Pick Your Fit</p>
+                <p className="land-header__text">U Pick Your Fit</p>
             </header>
 
-            <section>
-                <p className="center__text">Wish you could put together outfits from different online stores from one app? Then U PICK YOUR FIT is the app for U! Browse the inventory of your favorite online stores, build your fit and purchase your items all in one place!</p>
+            <main>
+                <div className="land-text__container"><p className="land-text">Wish you could put together outfits from different online stores from one app? Then U PICK YOUR FIT is the app for U! Browse the inventory of your favorite online stores, build your fit and purchase your items all in one place!</p></div>
                 <button>Begin Styling</button>
-            </section>
+            </main>
         </body>
     )
 }
