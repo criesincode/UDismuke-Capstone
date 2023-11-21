@@ -1,6 +1,6 @@
-import "./CuratedFit.scss"
+import "./TopsBottoms.scss"
 
-const CuratedFit = () => {
+const TopsBottoms = () => {
     return (
         <>
             <nav>
@@ -58,4 +58,4 @@ const CuratedFit = () => {
 
 
 
-export default CuratedFit;
+export default TopsBottoms;
