@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import "./TopsBottoms.scss"
+import MultiColor from "../../assets/images/203047816-1-multi.webp"
+import BlackWhite from "../../assets/images/curatedtop.webp"
+import Green from "../../assets/images/jacket3.webp"
+import "./Tops.scss"
 
-const TopsBottoms = () => {
+const Tops = () => {
     const [selectedBodyType, setSelectedBodyType] = useState('');
 
     const submitForm = () => {
@@ -11,16 +14,17 @@ const TopsBottoms = () => {
     const renderImages = () => {
         if (selectedBodyType === 'optionY') { // Plus
             return (
-                <>
-                    <img src="" alt="Plus Image 1" />
-                    <img src="path/to/jacket3.webp" alt="Plus Image 2" />
-                    <img src="path/to/curatedtop.webp" alt="Plus Image 3" />
-                </>
+                <div className="image-container">
+                    <img src={MultiColor} alt="Plus Image 1" />
+                    <img src={BlackWhite} alt="Plus Image 2" />
+                    <img src={Green} alt="Plus Image 3" />
+                </div>
             );
         }
         // Add more conditions for other body types if needed
         return null; // No images to display for other body types
     }
+    
     return (
         <>
             <nav>
@@ -61,34 +65,25 @@ const TopsBottoms = () => {
 
                         <div className="form-body">
                             <label className="dropdown3">Body type:</label>
-                            <select id="dropdown3" name="dropdown3">
+                            <select
+                                id="dropdown3"
+                                name="dropdown3"
+                                value={selectedBodyType}
+                                onChange={(e) => setSelectedBodyType(e.target.value)}
+                            >
                                 <option value="optionW">Slim</option>
                                 <option value="optionX">Tall</option>
                                 <option value="optionY">Plus</option>
                                 <option value="optionZ">Petite</option>
                             </select>
                         </div>
-                        <button type="button" onclick="submitForm()">Submit</button>
-                    </div>
+
+                        {renderImages()}
+
+                        <button type="button" onClick={submitForm}>Submit</button>
+                    </div>    
                 </form>
-                <div className="form-body">
-                <label className="dropdown3">Body type:</label>
-                <select
-                    id="dropdown3"
-                    name="dropdown3"
-                    value={selectedBodyType}
-                    onChange={(e) => setSelectedBodyType(e.target.value)}
-                >
-                    <option value="optionW">Slim</option>
-                    <option value="optionX">Tall</option>
-                    <option value="optionY">Plus</option>
-                    <option value="optionZ">Petite</option>
-                </select>
-            </div>
 
-            {renderImages()}
-
-            <button type="button" onClick={submitForm}>Submit</button>
             </section>
 
         </>
@@ -101,4 +96,4 @@ const TopsBottoms = () => {
 
 
 
-export default TopsBottoms;
+export default Tops;

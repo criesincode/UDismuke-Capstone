@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage"
-import TopsBottoms from "./pages/TopsBottoms/TopsBottoms"
+import Tops from "./pages/TopsBottoms/TopsBottoms"
 import "./App.scss"
 
 
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/category/:categoryId" element={<HomePage />} />
-          <Route path="/outfit" element={<TopsBottoms />} />
+          <Route path="/outfit" element={<Tops />} />
         </Routes>
       </Router>
     </div>

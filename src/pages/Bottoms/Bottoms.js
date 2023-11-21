@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
-import Laces from "../../assets/images/27662001.webp"
-import Strap from "../../assets/images/30970001.webp"
-import Chunky from "../../assets/images/shoe3.webp"
-import "./Shoes.scss"
+import LightWash from "../../assets/images/726930055-front-pdp.avif"
+import MediumWash from "../../assets/images/A34980007-front-pdp.avif"
+import DarkWash from "../../assets/images/A34980007-front-pdp.avif"
+import "./Bottoms.scss"
 
-const Shoes = () => {
-    const [selectedFor, setSelectedFor] = useState('');
+const Bottoms = () => {
+    const [selectedBodyType, setSelectedBodyType] = useState('');
 
     const submitForm = () => {
-  
+        // Your form submission logic goes here
     }
 
     const renderImages = () => {
-        if (selectedBodyType === 'optionX') { // Womens
+        if (selectedBodyType === 'optionY') { // Plus
             return (
                 <div className="image-container">
-                    <img src={Laces} alt="Boot Image 1" />
-                    <img src={Strap} alt="Boot Image 2" />
-                    <img src={Chunky} alt="Boot Image 3" />
+                    <img src={LightWash} alt="Plus Image 1" />
+                    <img src={MediumWash} alt="Plus Image 2" />
+                    <img src={DarkWash} alt="Plus Image 3" />
                 </div>
             );
         }
-        
+        // Add more conditions for other body types if needed
         return null; // No images to display for other body types
     }
     
@@ -64,16 +64,17 @@ const Shoes = () => {
                         </div>
 
                         <div className="form-body">
-                            <label className="dropdown3">For:</label>
+                            <label className="dropdown3">Body type:</label>
                             <select
                                 id="dropdown3"
                                 name="dropdown3"
-                                value={selectedFor}
-                                onChange={(e) => setSelectedFor(e.target.value)}
+                                value={selectedBodyType}
+                                onChange={(e) => setSelectedBodyType(e.target.value)}
                             >
-                                <option value="optionW">Men</option>
-                                <option value="optionX">Women</option>
-                                <option value="optionY">All</option>
+                                <option value="optionW">Slim</option>
+                                <option value="optionX">Tall</option>
+                                <option value="optionY">Plus</option>
+                                <option value="optionZ">Petite</option>
                             </select>
                         </div>
 
@@ -95,4 +96,4 @@ const Shoes = () => {
 
 
 
-export default Shoes;
+export default Bottoms;
