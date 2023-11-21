@@ -23,24 +23,29 @@ const TopsBottoms = () => {
                         <div className="form-category">
                             <label className="dropdown1">Choose category: Top, Bottoms or Shoes:</label>
                             <select id="dropdown1" name="dropdown1">
-                                <option value="option1">Option 1</option>
-                                <option value="option2">Option 2</option>
+                                <option value="option1">Tops</option>
+                                <option value="option2">Bottoms</option>
+                                <option value="option2">Shoes</option>
                             </select>
                         </div>
 
                         <div className="form-style">
                             <label className="dropdown2">Style type:</label>
                             <select id="dropdown2" name="dropdown2">
-                                <option value="optionA">Option A</option>
-                                <option value="optionB">Option B</option>
+                                <option value="optionA">Crop Top</option>
+                                <option value="optionB">Jackets</option>
+                                <option value="optionB">Sweater</option>
+                                <option value="optionB">Button Up</option>
                             </select>
                         </div>
 
                         <div className="form-body">
                             <label className="dropdown3">Body type:</label>
                             <select id="dropdown3" name="dropdown3">
-                                <option value="optionX">Option X</option>
-                                <option value="optionY">Option Y</option>
+                                <option value="optionX">Slim</option>
+                                <option value="optionY">Tall</option>
+                                <option value="optionB">Plus</option>
+                                <option value="optionB">Petite</option>
                             </select>
                         </div>
                         <button type="button" onclick="submitForm()">Submit</button>
