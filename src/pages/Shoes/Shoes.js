@@ -9,7 +9,7 @@ const Shoes = () => {
     const [selectedFor, setSelectedFor] = useState('');
 
     const submitForm = () => {
-  
+
     }
 
     const renderImages = () => {
@@ -22,10 +22,10 @@ const Shoes = () => {
                 </div>
             );
         }
-        
+
         return null; // No images to display for other body types
     }
-    
+
     return (
         <>
             <nav>
@@ -48,6 +48,7 @@ const Shoes = () => {
                         <div className="form-category">
                             <label className="dropdown1">Choose category: Top, Bottoms or Shoes:</label>
                             <select id="dropdown1" name="dropdown1">
+                                <option value="optionNull"></option>
                                 <option value="option1">Tops</option>
                                 <option value="option2">Bottoms</option>
                                 <option value="option3">Shoes</option>
@@ -57,6 +58,7 @@ const Shoes = () => {
                         <div className="form-style">
                             <label className="dropdown2">Style type:</label>
                             <select id="dropdown2" name="dropdown2">
+                                <option value="optionNull"></option>
                                 <option value="optionA">Crop Top</option>
                                 <option value="optionB">Jackets</option>
                                 <option value="optionC">Sweater</option>
@@ -70,8 +72,8 @@ const Shoes = () => {
                                 id="dropdown3"
                                 name="dropdown3"
                                 value={selectedFor}
-                                onChange={(e) => setSelectedFor(e.target.value)}
-                            >
+                                onChange={(e) => setSelectedFor(e.target.value)}>
+                                <option value="optionNull"></option>
                                 <option value="optionW">Men</option>
                                 <option value="optionX">Women</option>
                                 <option value="optionY">All</option>
@@ -80,9 +82,9 @@ const Shoes = () => {
 
                         {renderImages()}
                         <Link to="/CuratedFit">
-                        <button type="button" onClick={submitForm}>CURATE FIT</button>
+                            <button type="button" onClick={submitForm}>CURATE FIT</button>
                         </Link>
-                    </div>    
+                    </div>
                 </form>
 
             </section>

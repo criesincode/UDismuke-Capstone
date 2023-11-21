@@ -25,7 +25,7 @@ const Bottoms = () => {
         // Add more conditions for other body types if needed
         return null; // No images to display for other body types
     }
-    
+
     return (
         <>
             <nav>
@@ -48,6 +48,7 @@ const Bottoms = () => {
                         <div className="form-category">
                             <label className="dropdown1">Choose category: Top, Bottoms or Shoes:</label>
                             <select id="dropdown1" name="dropdown1">
+                                <option value="optionNull"></option>
                                 <option value="option1">Tops</option>
                                 <option value="option2">Bottoms</option>
                                 <option value="option3">Shoes</option>
@@ -57,6 +58,7 @@ const Bottoms = () => {
                         <div className="form-style">
                             <label className="dropdown2">Style type:</label>
                             <select id="dropdown2" name="dropdown2">
+                                <option value="optionNull"></option>
                                 <option value="optionA">Crop Top</option>
                                 <option value="optionB">Jackets</option>
                                 <option value="optionC">Sweater</option>
@@ -70,8 +72,8 @@ const Bottoms = () => {
                                 id="dropdown3"
                                 name="dropdown3"
                                 value={selectedBodyType}
-                                onChange={(e) => setSelectedBodyType(e.target.value)}
-                            >
+                                onChange={(e) => setSelectedBodyType(e.target.value)}>
+                                <option value="optionNull"></option>
                                 <option value="optionW">Slim</option>
                                 <option value="optionX">Tall</option>
                                 <option value="optionY">Plus</option>
@@ -80,10 +82,10 @@ const Bottoms = () => {
                         </div>
 
                         {renderImages()}
-                        <Link to ="/Shoes">
-                        <button type="button" onClick={submitForm}>NEXT</button>
+                        <Link to="/Shoes">
+                            <button type="button" onClick={submitForm}>NEXT</button>
                         </Link>
-                    </div>    
+                    </div>
                 </form>
 
             </section>
