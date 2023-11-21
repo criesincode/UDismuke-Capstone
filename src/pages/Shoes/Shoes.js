@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Laces from "../../assets/images/27662001.webp"
 import Strap from "../../assets/images/30970001.webp"
 import Chunky from "../../assets/images/shoe3.webp"
+import { Link } from 'react-router-dom';
 import "./Shoes.scss"
 
 const Shoes = () => {
@@ -12,7 +13,7 @@ const Shoes = () => {
     }
 
     const renderImages = () => {
-        if (selectedBodyType === 'optionX') { // Womens
+        if (selectedFor === 'optionX') { // Womens
             return (
                 <div className="image-container">
                     <img src={Laces} alt="Boot Image 1" />
@@ -78,8 +79,9 @@ const Shoes = () => {
                         </div>
 
                         {renderImages()}
-
-                        <button type="button" onClick={submitForm}>Submit</button>
+                        <Link to="/CuratedFit">
+                        <button type="button" onClick={submitForm}>CURATE FIT</button>
+                        </Link>
                     </div>    
                 </form>
 

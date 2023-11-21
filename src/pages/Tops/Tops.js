@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MultiColor from "../../assets/images/203047816-1-multi.webp"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import Green from "../../assets/images/jacket3.webp"
+import { Link } from 'react-router-dom';
 import "./Tops.scss"
 
 const Tops = () => {
@@ -79,8 +80,9 @@ const Tops = () => {
                         </div>
 
                         {renderImages()}
-
-                        <button type="button" onClick={submitForm}>Submit</button>
+                        <Link to="/Bottoms">
+                        <button type="button" onClick={submitForm}>NEXT</button>
+                        </Link>
                     </div>    
                 </form>
 

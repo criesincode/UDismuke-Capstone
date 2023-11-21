@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LightWash from "../../assets/images/726930055-front-pdp.avif"
 import MediumWash from "../../assets/images/A34980007-front-pdp.avif"
 import DarkWash from "../../assets/images/A34980007-front-pdp.avif"
+import { Link } from 'react-router-dom';
 import "./Bottoms.scss"
 
 const Bottoms = () => {
@@ -79,8 +80,9 @@ const Bottoms = () => {
                         </div>
 
                         {renderImages()}
-
-                        <button type="button" onClick={submitForm}>Submit</button>
+                        <Link to ="/Shoes">
+                        <button type="button" onClick={submitForm}>NEXT</button>
+                        </Link>
                     </div>    
                 </form>
 
