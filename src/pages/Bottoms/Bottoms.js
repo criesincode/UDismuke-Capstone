@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LightWash from "../../assets/images/726930055-front-pdp.avif"
 import MediumWash from "../../assets/images/A34980007-front-pdp.avif"
-import DarkWash from "../../assets/images/A34980007-front-pdp.avif"
+import DarkWash from "../../assets/images/A34980005-front-pdp.avif"
 import { Link } from 'react-router-dom';
 import "./Bottoms.scss"
 
@@ -16,13 +16,15 @@ const Bottoms = () => {
         if (selectedBodyType === 'optionY') { // Plus
             return (
                 <div className="image-container">
-                    <img src={LightWash} alt="Plus Image 1" />
+                    <Link to="/Shoes">
+                    <img onClick={submitForm} src={LightWash} alt="Plus Image 1" />
+                    </Link>
                     <img src={MediumWash} alt="Plus Image 2" />
                     <img src={DarkWash} alt="Plus Image 3" />
                 </div>
             );
         }
-        // Add more conditions for other body types if needed
+       
         return null; // No images to display for other body types
     }
 
@@ -32,14 +34,13 @@ const Bottoms = () => {
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>
                 </div>
+                <h1>Build Your Fit</h1>
                 <div className="nav-item__2">
                     <p className="nav-text__2"> Clear Selections</p>
                 </div>
             </nav>
 
             <section>
-                <h1>Build Your Fit</h1>
-
                 <form className="form">
                     <div className="form-input__container">
                         <div className="form-url">
@@ -59,10 +60,10 @@ const Bottoms = () => {
                             <label className="dropdown2">Style type:</label>
                             <select id="dropdown2" name="dropdown2">
                                 <option value="optionNull"></option>
-                                <option value="optionA">Crop Top</option>
-                                <option value="optionB">Jackets</option>
-                                <option value="optionC">Sweater</option>
-                                <option value="optionD">Button Up</option>
+                                <option value="optionA">Skinny</option>
+                                <option value="optionB">Loose</option>
+                                <option value="optionC">Boot Cut</option>
+                                <option value="optionD">Mom Jeans</option>
                             </select>
                         </div>
 
@@ -80,16 +81,10 @@ const Bottoms = () => {
                                 <option value="optionZ">Petite</option>
                             </select>
                         </div>
-
                         {renderImages()}
-                        <Link to="/Shoes">
-                            <button type="button" onClick={submitForm}>NEXT</button>
-                        </Link>
                     </div>
                 </form>
-
             </section>
-
         </>
     )
 }

@@ -18,7 +18,7 @@ function App() {
           <Route path="/Tops" element={<Tops />} />
           <Route path="/Bottoms" element={<Bottoms />} />
           <Route path="/Shoes" element={<Shoes />} />
-          <Route path="/CuratedFit" element={<Shoes />} />
+          <Route path="/CuratedFit" />
         </Routes>
       </Router>
     </div>

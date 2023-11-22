@@ -17,12 +17,14 @@ const Tops = () => {
             return (
                 <div className="image-container">
                     <img src={MultiColor} alt="Plus Image 1" />
-                    <img src={BlackWhite} alt="Plus Image 2" />
+                    <Link to="/Bottoms">
+                    <img onClick={submitForm} src={BlackWhite} alt="Plus Image 2" />
+                    </Link>
                     <img src={Green} alt="Plus Image 3" />
                 </div>
             );
         }
-        // Add more conditions for other body types if needed
+        
         return null; // No images to display for other body types
     }
 
@@ -32,14 +34,13 @@ const Tops = () => {
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>
                 </div>
+                <h1>Build Your Fit</h1>
                 <div className="nav-item__2">
                     <p className="nav-text__2"> Clear Selections</p>
                 </div>
             </nav>
 
             <section>
-                <h1>Build Your Fit</h1>
-
                 <form className="form">
                     <div className="form-input__container">
                         <div className="form-url">
@@ -80,16 +81,10 @@ const Tops = () => {
                                 <option value="optionZ">Petite</option>
                             </select>
                         </div>
-
                         {renderImages()}
-                        <Link to="/Bottoms">
-                            <button type="button" onClick={submitForm}>NEXT</button>
-                        </Link>
                     </div>
                 </form>
-
             </section>
-
         </>
     )
 }

@@ -18,7 +18,9 @@ const Shoes = () => {
                 <div className="image-container">
                     <img src={Laces} alt="Boot Image 1" />
                     <img src={Strap} alt="Boot Image 2" />
-                    <img src={Chunky} alt="Boot Image 3" />
+                    <Link to="/CurateFit">
+                    <img onClick={submitForm} src={Chunky} alt="Boot Image 3" />
+                    </Link>
                 </div>
             );
         }
@@ -32,14 +34,13 @@ const Shoes = () => {
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>
                 </div>
+                <h1>Build Your Fit</h1>
                 <div className="nav-item__2">
                     <p className="nav-text__2"> Clear Selections</p>
                 </div>
             </nav>
 
             <section>
-                <h1>Build Your Fit</h1>
-
                 <form className="form">
                     <div className="form-input__container">
                         <div className="form-url">
@@ -59,10 +60,10 @@ const Shoes = () => {
                             <label className="dropdown2">Style type:</label>
                             <select id="dropdown2" name="dropdown2">
                                 <option value="optionNull"></option>
-                                <option value="optionA">Crop Top</option>
-                                <option value="optionB">Jackets</option>
-                                <option value="optionC">Sweater</option>
-                                <option value="optionD">Button Up</option>
+                                <option value="optionA">Boots</option>
+                                <option value="optionB">Loafers</option>
+                                <option value="optionC">Sandals</option>
+                                <option value="optionD">Platforms</option>
                             </select>
                         </div>
 
@@ -81,14 +82,9 @@ const Shoes = () => {
                         </div>
 
                         {renderImages()}
-                        <Link to="/CuratedFit">
-                            <button type="button" onClick={submitForm}>CURATE FIT</button>
-                        </Link>
                     </div>
                 </form>
-
             </section>
-
         </>
     )
 }
