@@ -1,15 +1,30 @@
-/* Overlay.scss */
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+
 .overlay-container {
     position: fixed;
     bottom: 0;
-    // right: 0;
-    margin: 20px; /* Adjust margin as needed */
-    z-index: 1000; /* Ensure the overlay is above other elements */
+    margin: 20px;
+    z-index: 1000; 
   }
   
   .overlay-container img {
-    width: 43.75rem; /* Adjust the width of the image */
+    width: 43.75rem; 
     height: 43.75rem;
   }
-  
+  button {
+        align-self: center;
+        border: none;
+        width: 9.375rem;
+        height: 6.25rem;
+        border-radius: 50%;
+        font-family: "Barlow";
+        font-weight: 500;
+        font-size: 1.25rem;
+        margin-left: 43.75rem;
+        margin-top: 12.5rem;
+    }
+    button:hover {
+        background-color: $capstone-6;
+    }
   
