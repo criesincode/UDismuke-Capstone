@@ -1,0 +1,15 @@
+/* Overlay.scss */
+.overlay-container {
+    position: fixed;
+    bottom: 0;
+    // right: 0;
+    margin: 20px; /* Adjust margin as needed */
+    z-index: 1000; /* Ensure the overlay is above other elements */
+  }
+  
+  .overlay-container img {
+    width: 43.75rem; /* Adjust the width of the image */
+    height: 43.75rem;
+  }
+  
+  
