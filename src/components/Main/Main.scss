@@ -10,13 +10,17 @@
     padding-left: .625rem;
 }
 .land-text__container {
-    
-    // background-color: $capstone-5;
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
+    width: 31.25rem;
+    margin-right: 12.5rem;
+    border-style: double;
+    border-color: $capstone-4;
     // margin-bottom: 5rem;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+// main {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+// }

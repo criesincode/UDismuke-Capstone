@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import './Overlay.scss';
 
 const Overlay = () => {
-  return (
-    <>
-    <div className="overlay-container">
-      <img src={Fashion} alt="Overlay Image" />
-    </div>
-    <Link to="/Tops">
-        <button>Begin Styling</button>
-        </Link>
-    </>
-  );
+    return (
+        <>
+            <div className="overlay-container">
+                <img src={Fashion} alt="Overlay Image" />
+            </div>
+            
+            <Link to="/Tops"> <button>Begin Styling</button></Link>
+            
+        </>
+    );
 }
 
 export default Overlay;

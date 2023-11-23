@@ -2,13 +2,23 @@
 @use "../../styles/partials/font" as *;
 
 header {
+    font-family: "Glitch";
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
+    height: 10.9375rem;
 }
 .land-header__text {
     color: $capstone-3;
     font-weight: 900;
     font-size: 4.375rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      $capstone-2,
+      $capstone-4 50%,
+      $capstone-5 67%,
+      $capstone-2 100%
+    );
     // margin-top: 200px;
     // margin-bottom: 1.875rem;
 }    
