@@ -2,37 +2,20 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-
-/* styles.css */
-body {
-    margin: 0;
-  }
-  
-  .container {
+.curated-top__container, .curated-bottom__container, .curated-shoe__container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .image-section {
-    flex: 0 0 30%; /* 30% width, adjust as needed */
-  }
-  
-  .image-section img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ddd; /* Optional: add a border to images */
-  }
-  
-  .text-section {
-    flex: 0 0 65%; /* 65% width, adjust as needed */
-  }
-  
-  .text-section h2 {
-    color: #145C9E; /* Set color for heading */
-  }
-  
-  .text-section p {
-    line-height: 1.6;
-  }
-  
+    margin-bottom: 1.875rem;
+}
+.curated-top__text, .curated-bottom__text, .curated-shoe__text {
+    width: 15.625rem;
+}
+.curated-top__img, .curated-bottom__img, .curated-shoe__img {
+    width: 13.5625rem;
+    height: 16.5625rem;
+    margin-left: 12.5rem;
+}
+p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $capstone-1;
+}
