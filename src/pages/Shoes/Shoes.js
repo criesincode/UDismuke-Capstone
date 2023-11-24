@@ -18,7 +18,7 @@ const Shoes = () => {
                 <div className="image-container">
                     <img src={Laces} alt="Boot Image 1" />
                     <img src={Strap} alt="Boot Image 2" />
-                    <Link to="/CurateFit">
+                    <Link to="/CuratedFit">
                     <img onClick={submitForm} src={Chunky} alt="Boot Image 3" />
                     </Link>
                 </div>

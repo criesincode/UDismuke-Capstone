@@ -1,0 +1,38 @@
+@use "../../styles/partials/font" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+
+/* styles.css */
+body {
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .image-section {
+    flex: 0 0 30%; /* 30% width, adjust as needed */
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Optional: add a border to images */
+  }
+  
+  .text-section {
+    flex: 0 0 65%; /* 65% width, adjust as needed */
+  }
+  
+  .text-section h2 {
+    color: #145C9E; /* Set color for heading */
+  }
+  
+  .text-section p {
+    line-height: 1.6;
+  }
+  

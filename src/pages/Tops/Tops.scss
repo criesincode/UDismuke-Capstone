@@ -2,6 +2,31 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+/* Tops.scss */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide overflow to prevent scrollbars caused by the border */
+  }
+  
+  .page-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    border: 2px solid transparent; /* Set initial border */
+    animation: borderAnimation 3s infinite alternate; /* Apply animation */
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-color: #145C9E; /* Start color of the border */
+    }
+    100% {
+      border-color: #ff5733; /* End color of the border */
+    }
+  }
+  
 nav {
     display: flex;
     justify-content: space-between;
@@ -20,6 +45,17 @@ h1 {
     font-family: "Glitch";
     font-size: 2.5rem;
     margin-bottom: 1.875rem;
+    color: $capstone-3;
+    font-weight: 900;
+    // font-size: 4.375rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      $capstone-2,
+      $capstone-4 50%,
+      $capstone-5 67%,
+      $capstone-2 100%
+    );
 }
 #urlInput {
     width: 12.5rem;
@@ -75,4 +111,9 @@ h1 {
     height: 18.75rem;
     margin-right: 10px; /* Add some margin between images */
     border-radius: .625rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+  .image-container img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+} 
