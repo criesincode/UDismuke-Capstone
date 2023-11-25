@@ -16,6 +16,7 @@ const CuratedFit = () => {
                 </div>
             </nav>
             <main className="curated">
+           
                 <div className="curated-top__container">
                     <div className="curated-top__text"><p>TOP: THREADBARE PLUS SKI PUFFER JACKET IN HOUNDSTOOTH</p></div>
                     <img className="curated-top__img" src={BlackWhite} alt="Jacket" />
@@ -27,7 +28,7 @@ const CuratedFit = () => {
                 </div>
 
                 <div className="curated-shoe__container">
-                    <div className="curated-shoe__text"><p>SHOES: DOC MARTENS MOLLY WOMEN'S LEATHER PLATFORM BOOTS</p></div>
+                    <div className="curated-shoe__text"><p>SHOES: DOC MARTENS MOLLY WOMEN'S LEATHER PLATFORM BOOTS</p> <button id="curated-button">checkout</button></div>
                     <div><img className="curated-shoe__img" src={Chunky} alt="Boots" /></div>
                 </div>
             </main>

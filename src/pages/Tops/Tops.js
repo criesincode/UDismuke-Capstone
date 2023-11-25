@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import MultiColor from "../../assets/images/203047816-1-multi.webp"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import Green from "../../assets/images/jacket3.webp"
+import facebook from "../../assets/icons/Instagram_icon.png.webp"
+import twitter from "../../assets/icons/twitter.webp"
 import { Link } from 'react-router-dom';
 import "./Tops.scss"
 
@@ -30,7 +32,6 @@ const Tops = () => {
 
     return (
         <>
-            <div className="page-container">
                 <nav>
                     <div className="nav-item__1">
                         <p className="nav-text__1">U Pick Your Fit</p>
@@ -86,10 +87,6 @@ const Tops = () => {
                         </div>
                     </form>
                 </section>
-            </div>
-            <footer>
-            © Copyright 2023 U PICK YOUR FIT
-            </footer>
         </>
     )
 }
