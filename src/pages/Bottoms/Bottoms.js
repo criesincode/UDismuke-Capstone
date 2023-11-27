@@ -9,11 +9,11 @@ const Bottoms = () => {
     const [selectedBodyType, setSelectedBodyType] = useState('');
 
     const submitForm = () => {
-        // Your form submission logic goes here
+       
     }
 
     const renderImages = () => {
-        if (selectedBodyType === 'optionY') { // Plus
+        if (selectedBodyType === 'optionY') { 
             return (
                 <div className="image-container">
                     <Link to="/Shoes">
@@ -25,7 +25,7 @@ const Bottoms = () => {
             );
         }
        
-        return null; // No images to display for other body types
+        return null; 
     }
 
     return (
@@ -36,7 +36,7 @@ const Bottoms = () => {
                 </div>
                 <h1>Build Your Fit</h1>
                 <div className="nav-item__2">
-                    <p className="nav-text__2"> Clear Selections</p>
+                <Link to="/Tops"><p className="nav-text__2"> Clear Selections</p></Link>
                 </div>
             </nav>
 
@@ -53,6 +53,16 @@ const Bottoms = () => {
                                 <option value="option1">Tops</option>
                                 <option value="option2">Bottoms</option>
                                 <option value="option3">Shoes</option>
+                            </select>
+                        </div>
+
+                        <div className="form-body">
+                            <label className="dropdown3">For:</label>
+                            <select id="dropdown3" name="dropdown3">
+                                <option value="optionNull"></option>
+                                <option value="optionW">Men</option>
+                                <option value="optionX">Women</option>
+                                <option value="optionY">All</option>
                             </select>
                         </div>
 
@@ -85,6 +95,9 @@ const Bottoms = () => {
                     </div>
                 </form>
             </section>
+            <footer>
+                <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+            </footer>
         </>
     )
 }

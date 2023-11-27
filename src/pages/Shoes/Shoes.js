@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Laces from "../../assets/images/27662001.webp"
 import Strap from "../../assets/images/30970001.webp"
 import Chunky from "../../assets/images/shoe3.webp"
+import IG from "../../assets/icons/Instagram_icon.png.webp"
 import { Link } from 'react-router-dom';
 import "./Shoes.scss"
 
@@ -13,7 +14,7 @@ const Shoes = () => {
     }
 
     const renderImages = () => {
-        if (selectedFor === 'optionX') { // Womens
+        if (selectedFor === 'optionX') { 
             return (
                 <div className="image-container">
                     <img src={Laces} alt="Boot Image 1" />
@@ -25,7 +26,7 @@ const Shoes = () => {
             );
         }
 
-        return null; // No images to display for other body types
+        return null; 
     }
 
     return (
@@ -36,7 +37,7 @@ const Shoes = () => {
                 </div>
                 <h1>Build Your Fit</h1>
                 <div className="nav-item__2">
-                    <p className="nav-text__2"> Clear Selections</p>
+                <Link to="/Tops"><p className="nav-text__2"> Clear Selections</p></Link>
                 </div>
             </nav>
 
@@ -85,6 +86,9 @@ const Shoes = () => {
                     </div>
                 </form>
             </section>
+            <footer>
+                <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+            </footer>
         </>
     )
 }
