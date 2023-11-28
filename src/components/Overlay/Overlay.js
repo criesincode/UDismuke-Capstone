@@ -7,10 +7,10 @@ const Overlay = () => {
     return (
         <>
             <div className="overlay-container">
-                <img src={Fashion} alt="Overlay Image" />
+            <Link to="/Tops"><img src={Fashion} alt="Overlay Image" /></Link>
             </div>
             
-            <Link to="/Tops"> <button>Begin Styling</button></Link>
+             <button>Begin Styling</button>
             
             
         </>
