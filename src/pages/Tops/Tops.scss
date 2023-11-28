@@ -126,15 +126,27 @@ h1 {
 
 footer {
     display: flex;
-    flex-direction: column;
-    width: 15.625rem;
-    margin-left: 12.5rem;
-    margin-top: 6.875rem;
+    width: 43.75rem;
+    margin-top: 6.25rem;
+}
+.footer-text__container {
+    margin-right: 15.625rem;
+}
+.footer-text__A {
+    margin-right: 1.875rem;
+}
+.footer-icon__container {
+    margin-top: 1.25rem;
 }
 .footer-icon__A {
     width: .8125rem;
+    margin-right: .625rem;
 }
 .footer-icon__B, .footer-icon__C {
     width: 1.5625rem;
 }
+.footer-icon__C {
+    margin-left: .625rem;
+}
+
 

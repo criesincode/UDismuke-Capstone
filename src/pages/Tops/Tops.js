@@ -104,6 +104,7 @@ const Tops = () => {
                 <div className='footer-text__container'>
                     <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
                 </div>
+                <p className='footer-text__A'>FOLLOW US!</p>
                 <div className='footer-icon__container'>
                     <img className='footer-icon__A' src={FB} />
                     <img className='footer-icon__B' src={Instagram} />
