@@ -2,6 +2,7 @@ import "./CuratedFit.scss"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import LightWash from "../../assets/images/curatedbottom.avif"
 import Chunky from "../../assets/images/curatedshoes.webp"
+import { Link } from "react-router-dom"
 
 const CuratedFit = () => {
     return (
@@ -12,7 +13,7 @@ const CuratedFit = () => {
                 </div>
                 <h1>Curated Fit</h1>
                 <div className="nav-item__2">
-                    <p className="nav-text__2"> Clear Selections</p>
+                    <Link to="/Tops"><p className="nav-text__2"> Clear Selections</p></Link>
                 </div>
             </nav>
             <main className="curated">

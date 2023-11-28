@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import MultiColor from "../../assets/images/203047816-1-multi.webp"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import Green from "../../assets/images/jacket3.webp"
-import facebook from "../../assets/icons/Instagram_icon.png.webp"
-import twitter from "../../assets/icons/twitter.webp"
 import { Link } from 'react-router-dom';
 import "./Tops.scss"
 
