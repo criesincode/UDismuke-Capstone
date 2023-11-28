@@ -3,7 +3,6 @@ import Background from '../../components/Background/Background';
 import Laces from "../../assets/images/27662001.webp"
 import Strap from "../../assets/images/30970001.webp"
 import Chunky from "../../assets/images/shoe3.webp"
-import IG from "../../assets/icons/Instagram_icon.png.webp"
 import { Link } from 'react-router-dom';
 import "./Shoes.scss"
 

@@ -3,6 +3,9 @@ import Background from '../../components/Background/Background';
 import MultiColor from "../../assets/images/203047816-1-multi.webp"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import Green from "../../assets/images/jacket3.webp"
+import FB from "../../assets/icons/icon-facebook.png"
+import Instagram from "../../assets/icons/icon-instagram.png"
+import Twitter from "../../assets/icons/icon-twitter.png"
 import { Link } from 'react-router-dom';
 import "./Tops.scss"
 
@@ -31,7 +34,7 @@ const Tops = () => {
 
     return (
         <>
-         <Background />
+            <Background />
             <nav>
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>
@@ -98,7 +101,14 @@ const Tops = () => {
                 </form>
             </section>
             <footer>
-                <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+                <div className='footer-text__container'>
+                    <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+                </div>
+                <div className='footer-icon__container'>
+                    <img className='footer-icon__A' src={FB} />
+                    <img className='footer-icon__B' src={Instagram} />
+                    <img className='footer-icon__C' src={Twitter} />
+                </div>
             </footer>
         </>
     )
