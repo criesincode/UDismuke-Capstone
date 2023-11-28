@@ -3,6 +3,9 @@ import Background from "../../components/Background/Background"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import LightWash from "../../assets/images/curatedbottom.avif"
 import Chunky from "../../assets/images/curatedshoes.webp"
+import FB from "../../assets/icons/icon-facebook.png"
+import Instagram from "../../assets/icons/icon-instagram.png"
+import Twitter from "../../assets/icons/icon-twitter.png"
 import { Link } from "react-router-dom"
 
 const CuratedFit = () => {
@@ -35,6 +38,17 @@ const CuratedFit = () => {
                     <div><img className="curated-shoe__img" src={Chunky} alt="Boots" /></div>
                 </div>
             </main>
+            <footer>
+                <div className='footer-text__container'>
+                    <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+                </div>
+                <p className='footer-text__A'>FOLLOW US!</p>
+                <div className='footer-icon__container'>
+                    <img className='footer-icon__A' src={FB} />
+                    <img className='footer-icon__B' src={Instagram} />
+                    <img className='footer-icon__C' src={Twitter} />
+                </div>
+            </footer>
         </>
     )
 }

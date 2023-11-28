@@ -3,6 +3,9 @@ import Background from '../../components/Background/Background';
 import LightWash from "../../assets/images/726930055-front-pdp.avif"
 import MediumWash from "../../assets/images/A34980007-front-pdp.avif"
 import DarkWash from "../../assets/images/A34980005-front-pdp.avif"
+import FB from "../../assets/icons/icon-facebook.png"
+import Instagram from "../../assets/icons/icon-instagram.png"
+import Twitter from "../../assets/icons/icon-twitter.png"
 import { Link } from 'react-router-dom';
 import "./Bottoms.scss"
 
@@ -98,7 +101,15 @@ const Bottoms = () => {
                 </form>
             </section>
             <footer>
-                <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+                <div className='footer-text__container'>
+                    <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+                </div>
+                <p className='footer-text__A'>FOLLOW US!</p>
+                <div className='footer-icon__container'>
+                    <img className='footer-icon__A' src={FB} />
+                    <img className='footer-icon__B' src={Instagram} />
+                    <img className='footer-icon__C' src={Twitter} />
+                </div>
             </footer>
         </>
     )

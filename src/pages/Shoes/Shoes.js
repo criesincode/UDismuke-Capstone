@@ -3,6 +3,9 @@ import Background from '../../components/Background/Background';
 import Laces from "../../assets/images/27662001.webp"
 import Strap from "../../assets/images/30970001.webp"
 import Chunky from "../../assets/images/shoe3.webp"
+import FB from "../../assets/icons/icon-facebook.png"
+import Instagram from "../../assets/icons/icon-instagram.png"
+import Twitter from "../../assets/icons/icon-twitter.png"
 import { Link } from 'react-router-dom';
 import "./Shoes.scss"
 
@@ -88,7 +91,15 @@ const Shoes = () => {
                 </form>
             </section>
             <footer>
-                <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+                <div className='footer-text__container'>
+                    <p className='footer-text'>Copyright © 2023 U PICK YOUR FIT</p>
+                </div>
+                <p className='footer-text__A'>FOLLOW US!</p>
+                <div className='footer-icon__container'>
+                    <img className='footer-icon__A' src={FB} />
+                    <img className='footer-icon__B' src={Instagram} />
+                    <img className='footer-icon__C' src={Twitter} />
+                </div>
             </footer>
         </>
     )
