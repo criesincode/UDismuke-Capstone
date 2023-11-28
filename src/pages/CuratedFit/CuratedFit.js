@@ -1,4 +1,5 @@
 import "./CuratedFit.scss"
+import Background from "../../components/Background/Background"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import LightWash from "../../assets/images/curatedbottom.avif"
 import Chunky from "../../assets/images/curatedshoes.webp"
@@ -7,6 +8,7 @@ import { Link } from "react-router-dom"
 const CuratedFit = () => {
     return (
         <>
+        <Background />
             <nav>
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>

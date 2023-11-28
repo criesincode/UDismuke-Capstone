@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Background from '../../components/Background/Background';
 import LightWash from "../../assets/images/726930055-front-pdp.avif"
 import MediumWash from "../../assets/images/A34980007-front-pdp.avif"
 import DarkWash from "../../assets/images/A34980005-front-pdp.avif"
@@ -30,6 +31,7 @@ const Bottoms = () => {
 
     return (
         <>
+        <Background />
             <nav>
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>

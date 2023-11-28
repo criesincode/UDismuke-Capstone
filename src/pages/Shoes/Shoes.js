@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Background from '../../components/Background/Background';
 import Laces from "../../assets/images/27662001.webp"
 import Strap from "../../assets/images/30970001.webp"
 import Chunky from "../../assets/images/shoe3.webp"
@@ -31,6 +32,7 @@ const Shoes = () => {
 
     return (
         <>
+        <Background />
             <nav>
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>
