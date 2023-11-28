@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Background from '../../components/Background/Background';
 import MultiColor from "../../assets/images/203047816-1-multi.webp"
 import BlackWhite from "../../assets/images/curatedtop.webp"
 import Green from "../../assets/images/jacket3.webp"
@@ -30,6 +31,7 @@ const Tops = () => {
 
     return (
         <>
+         <Background />
             <nav>
                 <div className="nav-item__1">
                     <p className="nav-text__1">U Pick Your Fit</p>
