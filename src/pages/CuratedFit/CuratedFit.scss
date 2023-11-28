@@ -8,11 +8,16 @@
 }
 .curated-top__text, .curated-bottom__text, .curated-shoe__text {
     width: 15.625rem;
+    padding-left: .625rem;
 }
 .curated-top__img, .curated-bottom__img, .curated-shoe__img {
     width: 13.5625rem;
     height: 16.5625rem;
     margin-left: 12.5rem;
+    border-radius: .625rem;
+}
+.curated-top__img {
+    margin-top: 1.25rem;
 }
 p {
     font-size: 1.25rem;
@@ -21,4 +26,8 @@ p {
 }
 #curated-button {
     margin-left: 0;
+}
+main {
+    margin-top: 4.375rem;
+    border: 2px solid $capstone-4;
 }
